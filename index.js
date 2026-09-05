@@ -21,5 +21,10 @@ bot.onText(/\/help/, (msg) => {
     "📚 PrepArena Help\n\nUse /start to begin."
   );
 });
-
+bot.onText(/\/tests/, (msg) => {
+  bot.sendMessage(
+    msg.chat.id,
+    "📝 Available Tests\n\nAbhi koi test available nahi hai.\n\nPrepArena par naye tests jaldi add honge! 🚀"
+  );
+});
 console.log("🤖 PrepArena Bot is running...");
