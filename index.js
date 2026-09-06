@@ -27,4 +27,10 @@ bot.onText(/\/tests/, (msg) => {
     "📝 Available Tests\n\nAbhi koi test available nahi hai.\n\nPrepArena par naye tests jaldi add honge! 🚀"
   );
 });
+bot.onText(/\/results/, (msg) => {
+  bot.sendMessage(
+    msg.chat.id,
+    "📊 My Results\n\nAbhi aapke koi results available nahi hain.\n\nTest complete karne ke baad yahan results dikhenge. 🚀"
+  );
+});
 console.log("🤖 PrepArena Bot is running...");
