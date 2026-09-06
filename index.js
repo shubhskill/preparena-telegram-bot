@@ -33,4 +33,16 @@ bot.onText(/\/results/, (msg) => {
     "📊 My Results\n\nAbhi aapke koi results available nahi hain.\n\nTest complete karne ke baad yahan results dikhenge. 🚀"
   );
 });
+bot.onText(/\/profile/, (msg) => {
+  const name = msg.from.first_name || "Student";
+  const username = msg.from.username
+    ? `@${msg.from.username}`
+    : "Not set";
+
+  bot.sendMessage(
+    msg.chat.id,
+    `👤 My Profile\n\nName: ${name}\nUsername: ${username}\n\nPrepArena 🚀`
+  );
+});
+
 console.log("🤖 PrepArena Bot is running...");
